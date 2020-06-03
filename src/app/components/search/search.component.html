@@ -1,0 +1,12 @@
+<h1>Busqueda: <small>{{termino}}</small></h1>
+<hr>
+<div class="row animated fadeIn" *ngIf="heroes.length == 0">
+  <div class="com-md-12">
+    <div class="alert alert-info">No existe el resulto con el termino: {{termino}}</div>
+
+  </div>
+</div>
+<div class="card-columns" >
+<app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+
+</div>
